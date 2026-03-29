@@ -9,20 +9,21 @@ export default {
       );
     }
 
-    // Detect language: ?lang=xx, /zh, /ja, or Accept-Language header
-    let lang = "en";
-    const langParam = url.searchParams.get("lang");
-    const pathLang = url.pathname.replace("/", "");
+    // Detect language: /en, /zh, /ja, /ko path, or Accept-Language header
+    let lang = "";
+    const pathLang = url.pathname.replace(/^\//, "").replace(/\/.*/, "");
 
-    if (langParam && translations[langParam]) {
-      lang = langParam;
-    } else if (pathLang && translations[pathLang]) {
+    if (pathLang && translations[pathLang]) {
       lang = pathLang;
-    } else {
+    } else if (pathLang === "") {
+      // Root path: use Accept-Language
       const accept = request.headers.get("Accept-Language") || "";
       if (accept.match(/^zh/i)) lang = "zh";
       else if (accept.match(/^ja/i)) lang = "ja";
       else if (accept.match(/^ko/i)) lang = "ko";
+      else lang = "en";
+    } else {
+      lang = "en";
     }
 
     const t = { ...translations["en"], ...translations[lang] };
@@ -356,7 +357,7 @@ const LANGS = [
 function renderHTML(t: T, currentLang: string): string {
   const langSwitcher = LANGS.map(
     (l) =>
-      `<a href="/${l.code === "en" ? "" : l.code}" class="lang-btn ${l.code === currentLang ? "active" : ""}">${l.label}</a>`
+      `<a href="/${l.code}" class="lang-btn ${l.code === currentLang ? "active" : ""}">${l.label}</a>`
   ).join("");
 
   const featureCards = t.features
