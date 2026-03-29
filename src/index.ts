@@ -120,7 +120,7 @@ const translations: Record<string, Partial<T>> = {
     techTitle: "Built with modern tech",
     techDesc: "Native performance, tiny footprint, open source.",
     footerOSS: "ClipBin is open source.",
-    footerMade: "Made with Rust + React. 3.1 MB download. macOS 10.15+",
+    footerMade: "Made with Rust + React. 2.6 MB download. macOS 10.15+",
     langLabel: "EN",
   },
 
@@ -194,7 +194,7 @@ const translations: Record<string, Partial<T>> = {
     techTitle: "现代技术栈",
     techDesc: "原生性能，极小体积，开源免费。",
     footerOSS: "ClipBin 是开源软件。",
-    footerMade: "Rust + React 构建，3.1 MB 下载，支持 macOS 10.15+",
+    footerMade: "Rust + React 构建，2.6 MB 下载，支持 macOS 10.15+",
     langLabel: "中文",
   },
 
@@ -268,7 +268,7 @@ const translations: Record<string, Partial<T>> = {
     techTitle: "モダンな技術スタック",
     techDesc: "ネイティブパフォーマンス、小さなフットプリント、オープンソース。",
     footerOSS: "ClipBinはオープンソースです。",
-    footerMade: "Rust + React製。3.1 MBダウンロード。macOS 10.15+",
+    footerMade: "Rust + React製。2.6 MBダウンロード。macOS 10.15+",
     langLabel: "日本語",
   },
 
@@ -342,7 +342,7 @@ const translations: Record<string, Partial<T>> = {
     techTitle: "현대적인 기술 스택",
     techDesc: "네이티브 성능, 작은 용량, 오픈 소스.",
     footerOSS: "ClipBin은 오픈 소스입니다.",
-    footerMade: "Rust + React로 제작. 3.1 MB 다운로드. macOS 10.15+",
+    footerMade: "Rust + React로 제작. 2.6 MB 다운로드. macOS 10.15+",
     langLabel: "한국어",
   },
 };
@@ -488,7 +488,7 @@ function renderHTML(t: T, currentLang: string): string {
     <div class="container">
       <p>${t.footerOSS} <a href="https://github.com/wwwppp0801/clipbin">View on GitHub</a></p>
       <p style="margin-top:8px">${t.footerMade}</p>
-      <p style="margin-top:4px;font-size:11px;color:#555">v0.5.0</p>
+      <p style="margin-top:4px;font-size:11px;color:#555">v0.1.1</p>
     </div>
   </footer>
 </body>
