@@ -465,7 +465,10 @@ function renderHTML(t: T, currentLang: string): string {
       </div>
     </section>
     <section class="screenshot">
-      <img src="https://raw.githubusercontent.com/wwwppp0801/clipbin/main/docs/images/01-main-view.png" alt="ClipBin" />
+      <p style="font-size:13px;color:var(--muted);margin-bottom:12px">Press <span style="color:var(--accent);font-family:SF Mono,monospace">⇧⌘V</span> to open the clipboard panel</p>
+      <img src="https://raw.githubusercontent.com/wwwppp0801/clipbin/main/docs/images/01-main-view.png" alt="ClipBin clipboard panel" />
+      <p style="font-size:13px;color:var(--muted);margin-top:32px;margin-bottom:12px">Press <span style="color:var(--accent);font-family:SF Mono,monospace">⇧⌘A</span> to capture & annotate screenshots</p>
+      <img src="https://raw.githubusercontent.com/wwwppp0801/clipbin/main/docs/images/02-screenshot-editor.png" alt="ClipBin screenshot editor" />
     </section>
     <section class="features">
       <h2>${t.featuresTitle}</h2>
