@@ -104,6 +104,11 @@ const translations: Record<string, Partial<T>> = {
         desc: "Export your clipboard history as JSON. Import on another machine. Never lose your snippets.",
       },
       {
+        icon: "🔄",
+        title: "Perfect Restoration",
+        desc: "Stores ALL clipboard data types (text, HTML, file URLs, images, app-specific formats). Pastes back exactly what was copied.",
+      },
+      {
         icon: "🖥️",
         title: "Multi-Monitor",
         desc: "Works perfectly with external displays. The panel always appears on the screen where your cursor is.",
@@ -186,6 +191,11 @@ const translations: Record<string, Partial<T>> = {
         icon: "💾",
         title: "导出与导入",
         desc: "将剪贴板历史导出为 JSON，在另一台机器导入，永不丢失。",
+      },
+      {
+        icon: "🔄",
+        title: "完美还原",
+        desc: "保存剪贴板所有数据类型（文本、HTML、文件 URL、图片、应用专有格式），粘贴时完整还原原始内容。",
       },
       {
         icon: "🖥️",
@@ -272,6 +282,11 @@ const translations: Record<string, Partial<T>> = {
         desc: "クリップボード履歴をJSONでエクスポート。別のマシンにインポート。",
       },
       {
+        icon: "🔄",
+        title: "完全復元",
+        desc: "すべてのクリップボードデータタイプ（テキスト、HTML、ファイルURL、画像、アプリ固有形式）を保存。コピーした内容を完全に復元してペースト。",
+      },
+      {
         icon: "🖥️",
         title: "マルチモニター",
         desc: "外部ディスプレイに完全対応。カーソルがあるスクリーンにパネルが表示されます。",
@@ -354,6 +369,11 @@ const translations: Record<string, Partial<T>> = {
         icon: "💾",
         title: "내보내기 & 가져오기",
         desc: "클립보드 기록을 JSON으로 내보내기. 다른 기기에서 가져오기.",
+      },
+      {
+        icon: "🔄",
+        title: "완벽한 복원",
+        desc: "모든 클립보드 데이터 유형(텍스트, HTML, 파일 URL, 이미지, 앱 고유 형식)을 저장. 복사한 내용을 완벽하게 복원하여 붙여넣기.",
       },
       {
         icon: "🖥️",
@@ -528,7 +548,7 @@ function renderHTML(t: T, currentLang: string): string {
     <div class="container">
       <p>${t.footerOSS} <a href="https://github.com/wwwppp0801/clipbin">View on GitHub</a></p>
       <p style="margin-top:8px">${t.footerMade}</p>
-      <p style="margin-top:4px;font-size:11px;color:#555">v0.6.0</p>
+      <p style="margin-top:4px;font-size:11px;color:#555">v0.7.0</p>
     </div>
   </footer>
 </body>
