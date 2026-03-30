@@ -103,6 +103,16 @@ const translations: Record<string, Partial<T>> = {
         title: "Export & Import",
         desc: "Export your clipboard history as JSON. Import on another machine. Never lose your snippets.",
       },
+      {
+        icon: "🖥️",
+        title: "Multi-Monitor",
+        desc: "Works perfectly with external displays. The panel always appears on the screen where your cursor is.",
+      },
+      {
+        icon: "⚙️",
+        title: "Settings Window",
+        desc: "Standalone settings window. Configure hotkey, max history, ignored apps, auto-launch. Opens on first launch.",
+      },
     ],
     shortcutsTitle: "Keyboard shortcuts",
     shortcuts: [
@@ -176,6 +186,16 @@ const translations: Record<string, Partial<T>> = {
         icon: "💾",
         title: "导出与导入",
         desc: "将剪贴板历史导出为 JSON，在另一台机器导入，永不丢失。",
+      },
+      {
+        icon: "🖥️",
+        title: "多屏支持",
+        desc: "完美支持外接显示器。面板始终出现在鼠标所在的屏幕上。",
+      },
+      {
+        icon: "⚙️",
+        title: "设置窗口",
+        desc: "独立设置窗口。配置快捷键、历史上限、忽略应用、开机自启。首次启动自动打开。",
       },
     ],
     shortcutsTitle: "快捷键",
@@ -251,6 +271,16 @@ const translations: Record<string, Partial<T>> = {
         title: "エクスポート＆インポート",
         desc: "クリップボード履歴をJSONでエクスポート。別のマシンにインポート。",
       },
+      {
+        icon: "🖥️",
+        title: "マルチモニター",
+        desc: "外部ディスプレイに完全対応。カーソルがあるスクリーンにパネルが表示されます。",
+      },
+      {
+        icon: "⚙️",
+        title: "設定ウィンドウ",
+        desc: "独立した設定ウィンドウ。ホットキー、最大履歴数、無視アプリ、自動起動を設定。初回起動時に自動表示。",
+      },
     ],
     shortcutsTitle: "キーボードショートカット",
     shortcuts: [
@@ -324,6 +354,16 @@ const translations: Record<string, Partial<T>> = {
         icon: "💾",
         title: "내보내기 & 가져오기",
         desc: "클립보드 기록을 JSON으로 내보내기. 다른 기기에서 가져오기.",
+      },
+      {
+        icon: "🖥️",
+        title: "멀티 모니터",
+        desc: "외부 디스플레이를 완벽하게 지원. 패널은 항상 커서가 있는 화면에 표시됩니다.",
+      },
+      {
+        icon: "⚙️",
+        title: "설정 창",
+        desc: "독립 설정 창. 단축키, 최대 기록 수, 무시 앱, 자동 시작을 설정. 첫 실행 시 자동 표시.",
       },
     ],
     shortcutsTitle: "키보드 단축키",
@@ -488,7 +528,7 @@ function renderHTML(t: T, currentLang: string): string {
     <div class="container">
       <p>${t.footerOSS} <a href="https://github.com/wwwppp0801/clipbin">View on GitHub</a></p>
       <p style="margin-top:8px">${t.footerMade}</p>
-      <p style="margin-top:4px;font-size:11px;color:#555">v0.1.1</p>
+      <p style="margin-top:4px;font-size:11px;color:#555">v0.6.0</p>
     </div>
   </footer>
 </body>
