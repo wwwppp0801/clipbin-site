@@ -548,7 +548,7 @@ function renderHTML(t: T, currentLang: string): string {
     <div class="container">
       <p>${t.footerOSS} <a href="https://github.com/wwwppp0801/clipbin">View on GitHub</a></p>
       <p style="margin-top:8px">${t.footerMade}</p>
-      <p style="margin-top:4px;font-size:11px;color:#555">v0.7.0</p>
+      <p style="margin-top:4px;font-size:11px;color:#555">v0.8.0</p>
     </div>
   </footer>
 </body>
